@@ -40,7 +40,18 @@
   --card-border-rgb: 131, 134, 135;
 }
 
+.inputs {
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+}
+
 @media (prefers-color-scheme: dark) {
+
+  .inputs{
+    background-color: orange;
+  }
+
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;

@@ -22,7 +22,7 @@ export default function Home() {
       <div className={styles.description}>
         <p>Harc Crypt: (Szyfr Playfair)</p>
       </div>
-      <Typography variant="h1" component="h2">
+      <Typography variant="h2" component="h2">
         {output}
       </Typography>
       <div className={styles.center}>
@@ -32,6 +32,8 @@ export default function Home() {
             onChange={(e) => {
               setInput(e.target.value);
             }}
+            placeholder="Wpisz tekst"
+            className="inputs"
           />
           <Switch
             defaultChecked
@@ -43,6 +45,8 @@ export default function Home() {
           {"   "}|| KLUCZ:
           <Input
             id="outlined-basic"
+            placeholder="Wprowadź klucz"
+            className="inputs"
             onChange={(e) => {
               setKey(e.target.value);
             }}
