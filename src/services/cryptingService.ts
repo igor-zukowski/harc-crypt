@@ -30,7 +30,7 @@ const prepareTable = (key = "") => {
 
   const removeDuplicates = (key) => {
     const uniqueChars = [];
-    for (const char of key) {
+    for (const char of key.toUpperCase().replace(/J/gi, "I")) {
       if (!uniqueChars.includes(char)) {
         uniqueChars.push(char);
       }
